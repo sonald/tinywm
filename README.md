@@ -2,6 +2,7 @@
 
 libtinywm supports x11, wayland and directfb backends right now.
 
+```
 ├── doc
 ├── libtinywm
 │   ├── ...
@@ -10,6 +11,7 @@ libtinywm supports x11, wayland and directfb backends right now.
 │   ├── wayland
 │   └── x11
 └── test
+```
 
 ## hack
 

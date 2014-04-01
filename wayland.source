@@ -1,0 +1,9 @@
+#!/bin/sh
+WLD=$HOME/wayland # please change this to meet your situation
+LD_LIBRARY_PATH=$WLD/lib
+PKG_CONFIG_PATH=$WLD/lib/pkgconfig/:$WLD/share/pkgconfig/
+ACLOCAL="aclocal -I $WLD/share/aclocal"
+PATH=$WLD/bin:$PATH
+XDG_RUNTIME_DIR=/tmp
+ 
+export WLD LD_LIBRARY_PATH PKG_CONFIG_PATH ACLOCAL PATH XDG_RUNTIME_DIR

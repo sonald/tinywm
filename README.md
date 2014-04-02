@@ -1,31 +1,41 @@
 # TinyWM
 
-libtinywm supports x11, wayland and directfb backends right now.
+libtinywm try to support x11, wayland and directfb backends currently.
+
+
+## build for X11
 
 ```
-├── doc
-├── libtinywm
-│   ├── ...
-│   ├── tinywm.c
-│   ├── tinywm.h
-│   ├── wayland
-│   └── x11
-└── test
-```
-
-## hack
-
-### build
-
-```
-./autogen.sh
-./configure --prefix=$WLD
+./autogen.sh --prefix=/usr
 make
+sudo make install
 ```
 
-### xinitrc
+
+## build for Wayland
+
+```
+./autogen.sh --prefix=$WLD
+make
+make install
+```
+
+
+## usage for Wayland
 
 ```
 source wayland.source
-exec xterm & tinywm
+tinywm
 ```
+
+
+## TODO
+
+- [ ] architecture design
+- [ ] testcase driven
+- [ ] tinywm abstract layer
+- [ ] x11 backend support
+- [ ] wayland backend support
+- [ ] directfb backend support
+- [ ] qt5 bindings
+- [ ] gtk3 bindings

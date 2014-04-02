@@ -1,4 +1,4 @@
-#!/bin/sh
+#! /bin/sh
 WLD=$HOME/wayland # please change this to meet your situation
 LD_LIBRARY_PATH=$WLD/lib
 PKG_CONFIG_PATH=$WLD/lib/pkgconfig/:$WLD/share/pkgconfig/

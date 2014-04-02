@@ -21,10 +21,10 @@
 typedef void (*TINYWM_CALLBACK)(void*, void*);
 
 typedef struct {
-    /* property goes here */
+    /* public property goes here */
     int handler;
 
-    /* function goes here */
+    /* public function goes here */
     void (*foo)(TINYWM_CALLBACK, void*);
     void (*bar)();
 } tinywm_t;

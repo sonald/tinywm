@@ -39,3 +39,4 @@ tinywm
 - [ ] directfb backend support
 - [ ] qt5 bindings
 - [ ] gtk3 bindings
+- [ ] dynamic backend switch
